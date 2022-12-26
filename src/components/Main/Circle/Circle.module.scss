@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width:886px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .graphBlock {
+    margin: 160px 0 0 5rem;
+
+    @media (max-width:886px) {
+      width: auto;
+      margin-left: 0;
+    }
+
+    @media (max-width:426px) {
+      margin-top: 40px;
+    }
+
+    img {
+
+      @media (max-width:769px) {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width:426px) {
+        display: none;
+      }
+
+      &.mobileCircle {
+        display: none;
+
+        @media (max-width:426px) {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
