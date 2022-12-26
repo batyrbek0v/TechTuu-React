@@ -11,14 +11,14 @@ const Projects = () => {
         <div className={cls.projectsInnerContainer}>
           <div className={cls.projectsWrapper}>
             {
-              cardList.map(({ id, url, route }) => (
+              cardList.map(({ id, url, route, alt }) => (
                 <a
                   href={route}
                   className={cls.Link}
                   key={id}
                 >
                   <div className={cls.projectBlock}>
-                    <img src={url} alt="" />
+                    <img src={url} alt={alt} />
                   </div>
                 </a>
               ))
