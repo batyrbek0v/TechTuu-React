@@ -5,7 +5,6 @@ import Projects from './Projects/Projects'
 import Team from './Team/Team'
 import FormContainer from './FormContainer/FormContainer'
 
-
 const Main = () => {
   return (
     <>
