@@ -1,6 +1,8 @@
 import React from 'react'
 import cls from './SideBar.module.scss'
 import closeIcon from '../../../assets/icons/close.svg'
+import { navList } from '../../../utils/cardList'
+import { scrolling } from '../../../utils/Anchor'
 
 const SideBar = ({ sideBarActive, setSideBar }) => {
 
@@ -18,10 +20,15 @@ const SideBar = ({ sideBarActive, setSideBar }) => {
           />
         </div>
         <ul className={cls.sideBarList}>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Team</a></li>
-          <li><a href="/">Projects</a></li>
-          <li className={cls.sideBarBtn}><a href="/">Contact us</a></li>
+          {
+            navList.map(({ id, title, route }) => (
+              <li key={id} onClick={() => scrolling(route)}>
+                <a>
+                  {title}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </aside>
     </>

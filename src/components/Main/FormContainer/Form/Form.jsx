@@ -1,11 +1,30 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 import Input from '../../../UI/FormInput/Input'
 import FormTitle from '../../../UI/Title/FormTitle'
 import cls from './Form.module.scss'
 
 
-const Form = ({ setName, setEmail, setContent, onSubmit, name, email, content }) => {
+const Form = (
+  {
+    setName,
+    setEmail,
+    setContent,
+    onSubmit,
+    name,
+    email,
+    content,
+    inputHasError,
+  }
+) => {
 
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors }
+  // } = useForm({
+  //   mode: "onChange"
+  // })
 
 
   return (
@@ -18,15 +37,17 @@ const Form = ({ setName, setEmail, setContent, onSubmit, name, email, content })
             placholder='Name'
             value={name}
             onChange={setName}
+            empty={inputHasError}
           />
           <Input
             type='email'
             placholder='Email'
             value={email}
             onChange={setEmail}
+            empty={inputHasError}
           />
           <textarea
-            className={cls.formInput}
+            className={!inputHasError ? cls.formInput : cls.formInputErr}
             value={content}
             placeholder="Write your message here"
             onChange={e => setContent(e.target.value)}

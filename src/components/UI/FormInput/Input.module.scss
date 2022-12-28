@@ -32,3 +32,20 @@
     }
   }
 }
+
+.inputEmpty {
+  padding: 18px 16px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  color: #828282;
+  font-size: 16px;
+  // border: 2.5px solid #de4f54;
+  outline: 2.5px solid #de4f54;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border: 0;
+
+  &::placeholder {
+    color: #de4f54;
+  }
+}

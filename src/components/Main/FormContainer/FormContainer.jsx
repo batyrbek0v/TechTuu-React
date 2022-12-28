@@ -1,5 +1,4 @@
 import React from 'react'
-import { api } from '../../../API/api'
 import useCrud from '../../../API/Hooks/useCrud'
 import Title from '../../UI/Title/Title'
 import Contacts from './Contacts/Contacts'
@@ -9,28 +8,33 @@ import PopUp from './PopUp/PopUp'
 
 const FormContainer = () => {
 
-  const { actions, popUp, setPopUp, popUpError } = useCrud()
+  const {
+    actions,
+    popUp,
+    setPopUp,
+    popUpError,
+    setPopUpError,
+    errMessage
+  } = useCrud()
 
   const [names, setNames] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [content, setContent] = React.useState('')
+  const [inputHasError, setInputHasError] = React.useState(false)
 
 
   const handleSubmit = e => {
     e.preventDefault()
 
-    actions.post({
-      email: email,
-      content: content,
-      name: names,
-    })
-
-    setNames('')
-    setEmail('')
-    setContent('')
-
-    console.log(popUp);
-    console.log(popUpError);
+    if (!names.length || !email.length) {
+      setInputHasError(true)
+    } else {
+      actions.post({
+        email: email,
+        content: content,
+        name: names,
+      })
+    }
   }
 
 
@@ -48,8 +52,28 @@ const FormContainer = () => {
             content={content}
             setContent={setContent}
             onSubmit={handleSubmit}
+            inputHasError={inputHasError}
           />
-          <PopUp isPosted={popUp} closePopUp={setPopUp}/>
+          {
+            popUp && <PopUp
+              setName={setNames}
+              isPosted={popUp}
+              closePopUp={setPopUp}
+              setInputHasError={setInputHasError}
+              title={errMessage}
+            />
+
+          }
+          {
+            popUpError && <PopUp
+              setName={setNames}
+              notPosted={popUpError}
+              setEmail={setEmail}
+              closeErrorPopUp={setPopUpError}
+              setInputHasError={setInputHasError}
+              title={errMessage}
+            />
+          }
         </div>
       </div>
     </>

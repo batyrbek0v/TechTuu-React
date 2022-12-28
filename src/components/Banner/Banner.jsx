@@ -1,6 +1,7 @@
 import React from 'react'
 import cls from './Banner.module.scss'
 import rectangleImage from '../../assets/img/banner-img.png'
+
 const Banner = () => {
 
   return (

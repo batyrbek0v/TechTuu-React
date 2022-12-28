@@ -15,7 +15,6 @@
     margin-top: 40px;
 
     .formInput,
-
     textarea,
     button {
       padding: 18px 16px;
@@ -28,32 +27,48 @@
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       border: 1px solid transparent;
+      // &.error {
+      //   animation: horizontal-shaking 0.2s 0s 2;
+      //   border: 2px solid #ef9797;
 
-      &.error {
-        animation: horizontal-shaking 0.2s 0s 2;
-        border: 2px solid #ef9797;
+      //   @keyframes horizontal-shaking {
+      //     0% {
+      //       transform: translateX(0)
+      //     }
 
-        @keyframes horizontal-shaking {
-          0% {
-            transform: translateX(0)
-          }
+      //     25% {
+      //       transform: translateX(5px)
+      //     }
 
-          25% {
-            transform: translateX(5px)
-          }
+      //     50% {
+      //       transform: translateX(-5px)
+      //     }
 
-          50% {
-            transform: translateX(-5px)
-          }
+      //     75% {
+      //       transform: translateX(5px)
+      //     }
 
-          75% {
-            transform: translateX(5px)
-          }
+      //     100% {
+      //       transform: translateX(0)
+      //     }
+      //   }
+      // }
+    }
 
-          100% {
-            transform: translateX(0)
-          }
-        }
+    .formInputErr {
+      padding: 18px 16px;
+      background-color: #f2f2f2;
+      border-radius: 15px;
+      color: #828282;
+      font-size: 16px;
+      // border: 2.5px solid #de4f54;
+      outline: 2.5px solid #de4f54;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      border: 0;
+
+      &::placeholder {
+        color: #de4f54;
       }
     }
 

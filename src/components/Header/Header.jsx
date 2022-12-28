@@ -23,7 +23,7 @@ const Header = () => {
           <div className={cls.navListBlock}>
             <ul className={cls.navList}>
               {
-                navList.map(({ id, title, route }) => (
+                navList.slice(0, 3).map(({ id, title, route }) => (
                   <li key={id} onClick={() => scrolling(route)}>
                     <a>
                       {title}

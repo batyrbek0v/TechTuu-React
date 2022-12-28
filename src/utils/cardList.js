@@ -1,4 +1,13 @@
 // PROJECT-IMAGE
+// import img1 from '../assets/img/project-img1.png'
+// import img2 from '../assets/img/project-img2.png'
+// import img3 from '../assets/img/project-img3.png'
+// import img4 from '../assets/img/project-img4.png'
+// import img5 from '../assets/img/project-img5.png'
+// import img6 from '../assets/img/project-img6.png'
+// import img7 from '../assets/img/project-img7.png'
+// import img8 from '../assets/img/project-img8.png'
+// import img9 from '../assets/img/project-img9.png'
 import img1 from '../assets/img/project-img1.png'
 import img2 from '../assets/img/project-img2.png'
 import img3 from '../assets/img/project-img3.png'
@@ -49,7 +58,13 @@ export const navList = [
     title: 'Projects',
     route: 1750,
   },
+  {
+    id: 4,
+    title: 'Contact us',
+    route: 6000,
+  },
 ]
+
 export const cardList = [
   {
     id: 1,
@@ -181,3 +196,64 @@ export const socialList = [
     route: 'telegram',
   },
 ]
+
+
+
+
+
+// export const cardList = [
+//   {
+//     id: 1,
+//     url: img1,
+//     alt: 'asus',
+//     route: 'https://www.asus.com/ru/'
+//   },
+//   {
+//     id: 2,
+//     url: img2,
+//     alt: 'Hello-it',
+//     route: 'http://hello.edu.kg/'
+//   },
+//   {
+//     id: 3,
+//     url: img3,
+//     alt: 'Starbucks',
+//     route: 'https://www.starbucks.com/'
+//   },
+//   {
+//     id: 4,
+//     url: img4,
+//     alt: 'Алайку',
+//     route: 'http://www.alaiku.com/'
+//   },
+//   {
+//     id: 5,
+//     url: img5,
+//     alt: 'tex-pro',
+//     route: 'https://texpro.ltd/'
+//   },
+//   {
+//     id: 6,
+//     url: img6,
+//     alt: 'Apple-Mac',
+//     route: 'https://www.mcdonalds.com/us/en-us.html'
+//   },
+//   {
+//     id: 7,
+//     url: img7,
+//     alt: '',
+//     route: 'https://www.apple.com/mac/'
+//   },
+//   {
+//     id: 8,
+//     url: img8,
+//     alt: 'MOBE',
+//     route: 'https://www.mobeforlife.com/'
+//   },
+//   {
+//     id: 9,
+//     url: img9,
+//     alt: 'ANSAFONE',
+//     route: 'https://ansafone.com/'
+//   },
+// ]

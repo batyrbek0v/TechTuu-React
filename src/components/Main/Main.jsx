@@ -3,6 +3,7 @@ import cls from './Main.module.scss'
 import Circle from './Circle/Cirlce'
 import Projects from './Projects/Projects'
 import Team from './Team/Team'
+import Slider from './Projects/Slider'
 import FormContainer from './FormContainer/FormContainer'
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
         <div className={cls.generalContainer}>
           <Circle />
           <Projects />
+          <Slider />
           <Team />
           <FormContainer />
         </div>
