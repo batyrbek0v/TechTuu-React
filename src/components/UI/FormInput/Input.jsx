@@ -2,14 +2,14 @@
 import React from 'react'
 import cls from './Input.module.scss'
 
-const Input = ({ type, placholder, onChange, empty }) => {
+const Input = ({ type, placeholder, onChange, empty }) => {
 
 
   return (
     <>
       <input
         type={type}
-        placeholder={!empty ? placholder : `${placholder} cannot be empty`}
+        placeholder={!empty ? placeholder : `${placeholder} cannot be empty`}
         className={!empty ? cls.formInput : cls.inputEmpty}
         onChange={e => onChange(e.target.value)}
       />

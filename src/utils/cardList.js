@@ -8,38 +8,38 @@
 // import img7 from '../assets/img/project-img7.png'
 // import img8 from '../assets/img/project-img8.png'
 // import img9 from '../assets/img/project-img9.png'
-import img1 from '../assets/img/project-img1.png'
-import img2 from '../assets/img/project-img2.png'
-import img3 from '../assets/img/project-img3.png'
-import img4 from '../assets/img/project-img4.png'
-import img5 from '../assets/img/project-img5.png'
-import img6 from '../assets/img/project-img6.png'
-import img7 from '../assets/img/project-img7.png'
-import img8 from '../assets/img/project-img8.png'
-import img9 from '../assets/img/project-img9.png'
+import img1 from '../assets/img/project-img1.png';
+import img2 from '../assets/img/project-img2.png';
+import img3 from '../assets/img/project-img3.png';
+import img4 from '../assets/img/project-img4.png';
+import img5 from '../assets/img/project-img5.png';
+import img6 from '../assets/img/project-img6.png';
+import img7 from '../assets/img/project-img7.png';
+import img8 from '../assets/img/project-img8.png';
+import img9 from '../assets/img/project-img9.png';
 // PROJECT-IMAGE
 
 // ====================
 
 // TEAM-IMAGE
-import asan from '../assets/img/team-img1.png'
-import aijan from '../assets/img/team-img2.png'
-import ivan from '../assets/img/team-img3.png'
+import asan from '../assets/img/team-img1.png';
+import aijan from '../assets/img/team-img2.png';
+import ivan from '../assets/img/team-img3.png';
 // TEAM-IMAGE
 
 // ==================
 
 // CONTACTS-ICON
 
-import location from '../assets/icons/location.svg'
-import phone from '../assets/icons/phone.svg'
-import envelope from '../assets/icons/envelope.svg'
+import location from '../assets/icons/location.svg';
+import phone from '../assets/icons/phone.svg';
+import envelope from '../assets/icons/envelope.svg';
 
-import facebook from '../assets/icons/facebook.svg'
-import instagram from '../assets/icons/instagram.svg'
-import youTube from '../assets/icons/youtube.svg'
-import telegram from '../assets/icons/telegram.svg'
-import whatsApp from '../assets/icons/whatsApp.svg'
+import facebook from '../assets/icons/facebook.svg';
+import instagram from '../assets/icons/instagram.svg';
+import youTube from '../assets/icons/youtube.svg';
+import telegram from '../assets/icons/telegram.svg';
+import whatsApp from '../assets/icons/whatsApp.svg';
 // CONTACTS-ICON
 
 export const navList = [
@@ -63,106 +63,78 @@ export const navList = [
     title: 'Contact us',
     route: 6000,
   },
-]
+];
 
 export const cardList = [
   {
-    id: 1,
-    url: img1,
-    alt: 'asus',
-    route: 'https://www.asus.com/ru/'
-  },
-  {
     id: 2,
     url: img2,
-    alt: 'Hello-it',
-    route: 'http://hello.edu.kg/'
-  },
-  {
-    id: 3,
-    url: img3,
-    alt: 'Starbucks',
-    route: 'https://www.starbucks.com/'
+    alt: 'Hello KG',
+    route: 'http://hello.edu.kg/',
   },
   {
     id: 4,
     url: img4,
     alt: 'Алайку',
-    route: 'http://www.alaiku.com/'
+    route: 'http://www.alaiku.com/',
   },
   {
     id: 5,
     url: img5,
     alt: 'tex-pro',
-    route: 'https://texpro.ltd/'
-  },
-  {
-    id: 6,
-    url: img6,
-    alt: 'Apple-Mac',
-    route: 'https://www.mcdonalds.com/us/en-us.html'
+    route:
+      'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.texpro',
   },
   {
     id: 7,
-    url: img7,
-    alt: '',
-    route: 'https://www.apple.com/mac/'
+    url: img6,
+    alt: 'alibos',
+    route:
+      'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
   },
-  {
-    id: 8,
-    url: img8,
-    alt: 'MOBE',
-    route: 'https://www.mobeforlife.com/'
-  },
-  {
-    id: 9,
-    url: img9,
-    alt: 'ANSAFONE',
-    route: 'https://ansafone.com/'
-  },
-]
+];
 
 export const teamList = [
   {
     id: 1,
     url: asan,
     name: 'Asan Amanov',
-    job: 'ceo/founder'
+    job: 'ceo/founder',
   },
   {
     id: 2,
     url: aijan,
     name: 'Aijan Asanova',
-    job: 'cto'
+    job: 'cto',
   },
   {
     id: 3,
     url: ivan,
     name: 'Ivan Ivanov',
-    job: 'Frontend developer'
+    job: 'Frontend developer',
   },
-]
+];
 
 export const contactList = [
   {
     id: 1,
     url: location,
     content: '24,A Ahunbaev str., Floor 1 Bishkek, Kyrgyz Republic',
-    alt: 'location'
+    alt: 'location',
   },
   {
     id: 2,
     url: phone,
     content: '+996 999 060 999',
-    alt: 'phone'
+    alt: 'phone',
   },
   {
     id: 3,
     url: envelope,
     content: 'office@techtoo.com',
-    alt: 'envelope'
+    alt: 'envelope',
   },
-]
+];
 
 export const socialList = [
   {
@@ -195,11 +167,7 @@ export const socialList = [
     alt: 'whatsApp',
     route: 'telegram',
   },
-]
-
-
-
-
+];
 
 // export const cardList = [
 //   {

@@ -30,10 +30,19 @@
     flex-direction: column;
     justify-content: center;
     gap: 52px;
+    position: relative;
 
     @media (max-width:426px) {
       width: 100%;
       padding: 0 1rem;
+    }
+
+    .bg {
+      position: absolute;
+      z-index: -1;
+      transform: rotate(90deg);
+      top: -15%;
+      left: -50%;
     }
 
     .contentInner {
