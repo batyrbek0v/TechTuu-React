@@ -1,0 +1,106 @@
+.projectWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+
+  .container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    .imgBlock {
+      height: 820px;
+      position: relative;
+      margin-top: 90px;
+
+      li {
+        transform: rotate(45deg);
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
+        position:absolute;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          transform: rotate(315deg);
+        }
+
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 25px;
+          object-fit: cover;
+        }
+      }
+
+      .grey {
+        transform: rotate(45deg);
+        width: 192px;
+        height: 192px;
+        border-radius: 25px;
+        position: absolute;
+        border: 4px solid #BDBDBD;
+        left: 510px;
+        top: 185px;
+      }
+
+      .orange {
+        transform: rotate(45deg);
+        width: 192px;
+        height: 192px;
+        border-radius: 25px;
+        position: absolute;
+        border: 4px solid #F6C222;
+        left: 510px;
+        top: 490px;
+      }
+
+      .img1{
+        top: 30px;
+        left: 680px;
+        position: absolute;
+      }
+
+      .img2{
+        top: 340px;
+        left: 35px;
+        position: absolute;
+      }
+
+      .img3{
+        top: 340px;
+        left: 340px;
+        position: absolute;
+      }
+
+      .img4{
+        top: 340px;
+        left: 680px;
+        position: absolute;
+      }
+
+      .img5{
+        top: 495px;
+        left: 833px;
+        position: absolute;
+      }
+
+      .img6{
+        top: 188px;
+        left: 188px;
+        position: absolute;
+      }
+
+      .img7{
+        top: 185px;
+        left: 833px;
+        position: absolute;
+      }
+    }
+  }
+}

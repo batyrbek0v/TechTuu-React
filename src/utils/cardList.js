@@ -1,22 +1,9 @@
-// PROJECT-IMAGE
-// import img1 from '../assets/img/project-img1.png'
-// import img2 from '../assets/img/project-img2.png'
-// import img3 from '../assets/img/project-img3.png'
-// import img4 from '../assets/img/project-img4.png'
-// import img5 from '../assets/img/project-img5.png'
-// import img6 from '../assets/img/project-img6.png'
-// import img7 from '../assets/img/project-img7.png'
-// import img8 from '../assets/img/project-img8.png'
-// import img9 from '../assets/img/project-img9.png'
-import img1 from '../assets/img/project-img1.png';
-import img2 from '../assets/img/project-img2.png';
-import img3 from '../assets/img/project-img3.png';
-import img4 from '../assets/img/project-img4.png';
-import img5 from '../assets/img/project-img5.png';
-import img6 from '../assets/img/project-img6.png';
-import img7 from '../assets/img/project-img7.png';
-import img8 from '../assets/img/project-img8.png';
-import img9 from '../assets/img/project-img9.png';
+import img1 from '../assets/img/helloIT.png';
+import img2 from '../assets/img/sdu.png';
+import img3 from '../assets/img/alaiku.png';
+import img4 from '../assets/img/aliboss.png';
+import img5 from '../assets/img/TexPro.png';
+
 // PROJECT-IMAGE
 
 // ====================
@@ -67,30 +54,42 @@ export const navList = [
 
 export const cardList = [
   {
+    id: 1,
+    url: img1,
+    alt: 'Hello KG',
+    class: 'img3',
+    route: 'http://hello.edu.kg/',
+  },
+  {
     id: 2,
     url: img2,
-    alt: 'Hello KG',
-    route: 'http://hello.edu.kg/',
+    alt: 'SDUFood Point',
+    class: 'img4',
+    route:
+      'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
+  },
+  {
+    id: 3,
+    url: img3,
+    alt: 'Alaiku',
+    class: 'img5',
+    route: 'http://www.alaiku.com/',
   },
   {
     id: 4,
     url: img4,
-    alt: 'Алайку',
-    route: 'http://www.alaiku.com/',
+    alt: 'AliBoss',
+    class: 'img6',
+    route:
+      'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
   },
   {
     id: 5,
     url: img5,
-    alt: 'tex-pro',
+    alt: 'TexPro',
+    class: 'img7',
     route:
       'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.texpro',
-  },
-  {
-    id: 7,
-    url: img6,
-    alt: 'alibos',
-    route:
-      'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
   },
 ];
 

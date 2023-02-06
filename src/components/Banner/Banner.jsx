@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import cls from './Banner.module.scss';
 import rectangleImage from '../../assets/img/banner-img.png';
+//  import rectangleImage from '../../assets/img/ba'
 import bg from '../../assets/img/bgWEL.png';
 import { scrolling } from '../../utils/Anchor';
 
