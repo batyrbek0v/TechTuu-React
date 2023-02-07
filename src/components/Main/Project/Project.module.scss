@@ -13,12 +13,13 @@
       height: 820px;
       position: relative;
       margin-top: 90px;
+      padding: 0 20px;
 
       li {
         transform: rotate(45deg);
-        width: 200px;
-        height: 200px;
-        border-radius: 25px;
+        width: 210px;
+        height: 210px;
+        border-radius: 30px;
         position:absolute;
 
         a {
@@ -28,78 +29,172 @@
           width: 100%;
           height: 100%;
           transform: rotate(315deg);
-        }
+          font-size: 30px;
+          font-weight: 300;
+          font-family: 'Audiowide';
+          text-align: center;
+          color: white;
 
-        img {
-          width: 200px;
-          height: 200px;
-          border-radius: 25px;
-          object-fit: cover;
+          .projectPhoto {
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            object-fit: cover;
+          }
         }
       }
 
       .grey {
         transform: rotate(45deg);
-        width: 192px;
-        height: 192px;
-        border-radius: 25px;
+        width: 210px;
+        height: 210px;
+        border-radius: 30px;
         position: absolute;
         border: 4px solid #BDBDBD;
-        left: 510px;
-        top: 185px;
+        top: 25%;
+        left: 43%;
       }
 
       .orange {
         transform: rotate(45deg);
-        width: 192px;
-        height: 192px;
-        border-radius: 25px;
+        width: 210px;
+        height: 210px;
+        border-radius: 30px;
         position: absolute;
         border: 4px solid #F6C222;
-        left: 510px;
-        top: 490px;
+        top: 66%;
+        left: 43%;
       }
 
       .img1{
-        top: 30px;
-        left: 680px;
+        top: 4%;
+        right: 30.2%;
         position: absolute;
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+
+        .justPhoto1 {
+          transform: rotate(315deg);
+          position: absolute;
+          z-index: -1;
+          top: -50px;
+          left: -50px;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
       }
 
       .img2{
-        top: 340px;
-        left: 35px;
+        top: 47%;
+        left: 6%;
         position: absolute;
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+
+        .justPhoto2 {
+          transform: rotate(315deg);
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
       }
 
       .img3{
-        top: 340px;
-        left: 340px;
+        top: 45.5%;
+        left: 30.5%;
         position: absolute;
-      }
+
+        &:hover {
+          background-image: url(../../../assets/img/helloIT.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 9999;
+
+          span {
+            display: none;
+          }
+        }
+    }
+
+
 
       .img4{
-        top: 340px;
-        left: 680px;
+        top: 45.5%;
+        left: 55%;
         position: absolute;
+
+        &:hover {
+          background-image: url(../../../assets/img/sdu.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 9999;
+
+          span {
+            display: none;
+          }
+        }
       }
 
       .img5{
-        top: 495px;
-        left: 833px;
+        top: 46%;
+        right: 6%;
         position: absolute;
+
+        &:hover {
+          background-image: url(../../../assets/img/alaiku.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 9999;
+
+          span {
+            display: none;
+          }
+        }
       }
 
       .img6{
-        top: 188px;
-        left: 188px;
+        top: 25.5%;
+        left: 18%;
         position: absolute;
+
+        &:hover {
+          background-image: url(../../../assets/img/aliboss.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 9999;
+
+          span {
+            display: none;
+          }
+        }
       }
 
       .img7{
-        top: 185px;
-        left: 833px;
+        right: 18%;
+        top: 25%;
         position: absolute;
+
+        &:hover {
+          background-image: url(../../../assets/img/TexPro.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 9999;
+
+          span {
+            display: none;
+          }
+        }
       }
     }
   }
