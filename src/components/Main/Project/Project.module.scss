@@ -1,6 +1,7 @@
 $xl: 1340px;
 $lg: 1200px;
 $md: 968px;
+$block: 830px;
 
 .projectWrapper {
   display: flex;
@@ -9,6 +10,10 @@ $md: 968px;
   padding: 40px 0;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: $block) {
+    display: none;
+  }
 
   .container {
     width: 1440px;
@@ -86,12 +91,8 @@ $md: 968px;
           color: white;
 
             @media screen and (max-width: $xl) {
-              width: 170px;
-              height: 170px;
-              border-radius: 25px;
               font-size: 24px;
             }
-    
           }
       }
     }
@@ -312,8 +313,13 @@ $md: 968px;
 
       .img5{
         top: 46%;
-        right: 6%;
+        left: 79%;
         position: absolute;
+
+        @media screen and (max-width: $xl) {
+          top: 45%;
+          left: 79%;
+        }
 
         &:hover {
           background-image: url(../../../assets/img/alaiku.png);

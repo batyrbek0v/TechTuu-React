@@ -14,43 +14,39 @@ const Project = () => {
 
   return (
     <>
-      {size >= 830 ? (
-        <div className={cls.projectWrapper}>
-          <div className={cls.container}>
-            <Title title='Our projects' />
-            <ul className={cls.imgBlock}>
-              <li className={cls.grey}></li>
-              <li className={cls.orange}></li>
-              <li className={cls.img1}>
-                <img className={cls.justPhoto1} src={first} alt='justPhoto' />
-              </li>
-              <li className={cls.img2}>
-                <img className={cls.justPhoto2} src={second} alt='justPhoto' />
-              </li>
-              {cardList?.map((el) => (
-                <li
-                  key={el.id}
-                  className={cls[el.class]}
-                  style={{
-                    backgroundColor: el.id % 2 === 0 ? '#3B91D1' : '#F6C222',
-                  }}
+      <div className={cls.projectWrapper}>
+        <div className={cls.container}>
+          <Title title='Our projects' />
+          <ul className={cls.imgBlock}>
+            <li className={cls.grey}></li>
+            <li className={cls.orange}></li>
+            <li className={cls.img1}>
+              <img className={cls.justPhoto1} src={first} alt='justPhoto' />
+            </li>
+            <li className={cls.img2}>
+              <img className={cls.justPhoto2} src={second} alt='justPhoto' />
+            </li>
+            {cardList?.map((el) => (
+              <li
+                key={el.id}
+                className={cls[el.class]}
+                style={{
+                  backgroundColor: el.id % 2 === 0 ? '#3B91D1' : '#F6C222',
+                }}
+              >
+                <a
+                  className={cls.links}
+                  href={el.route}
+                  target='_blank'
+                  rel='noreferrer'
                 >
-                  <a
-                    className={cls.links}
-                    href={el.route}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <span>{el.alt}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  <span>{el.alt}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      ) : (
-        <></>
-      )}
+      </div>
     </>
   );
 };

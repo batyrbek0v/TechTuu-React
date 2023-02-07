@@ -5,6 +5,8 @@
 *::before {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -20,4 +22,19 @@ ol {
 
 a {
   text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+a:active, a:focus, a:visited, li:focus, li:active {
+  outline: none !important;
+  border: none !important;        
+  text-decoration: none !important;
+  box-shadow: none !important;
+  -moz-outline-style: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;
 }
