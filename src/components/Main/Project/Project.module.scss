@@ -1,7 +1,7 @@
 $xl: 1340px;
 $lg: 1200px;
 $md: 968px;
-$block: 830px;
+$block: 829px;
 
 .projectWrapper {
   display: flex;
@@ -90,7 +90,7 @@ $block: 830px;
           text-align: center;
           color: white;
 
-            @media screen and (max-width: $xl) {
+            @media screen and (max-width: $md) {
               font-size: 24px;
             }
           }
@@ -283,7 +283,6 @@ $block: 830px;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-          z-index: 9999;
 
           span {
             display: none;

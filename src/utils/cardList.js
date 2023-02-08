@@ -57,14 +57,14 @@ export const cardList = [
     id: 1,
     url: img1,
     alt: 'Hello KG',
-    class: 'img3',
+    proClass: 'img3',
     route: 'http://hello.edu.kg/',
   },
   {
     id: 2,
     url: img2,
     alt: 'SDUFood Point',
-    class: 'img4',
+    proClass: 'img4',
     route:
       'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
   },
@@ -72,14 +72,14 @@ export const cardList = [
     id: 3,
     url: img3,
     alt: 'Alaiku',
-    class: 'img5',
+    proClass: 'img5',
     route: 'http://www.alaiku.com/',
   },
   {
     id: 4,
     url: img4,
     alt: 'AliBoss',
-    class: 'img6',
+    proClass: 'img6',
     route:
       'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.aliboss',
   },
@@ -87,7 +87,7 @@ export const cardList = [
     id: 5,
     url: img5,
     alt: 'TexPro',
-    class: 'img7',
+    proClass: 'img7',
     route:
       'https://play.google.com/store/apps/details?id=kg.kyrgyzcoder.texpro',
   },

@@ -1,17 +1,20 @@
-import React from 'react'
+import React from 'react';
+import '../../Main/Projects/Slider.css';
 
-const SliderCard = ({ route, url, alt }) => {
+const SliderCard = ({ route, url, alt, id, proClass }) => {
   return (
-    <>
-      <a
-        href={route}
-        rel="noreferrer"
-        target="_blank"
-      >
-        <img src={url} alt={alt} />
+    <div
+      style={{
+        backgroundColor: id % 2 === 0 ? '#3B91D1' : '#F6C222',
+        borderColor: id % 2 === 0 ? '#F6C222' : '#3B91D1',
+      }}
+      className={`projects ${proClass}`}
+    >
+      <a href={route} rel='noreferrer' target='_blank'>
+        <span>{alt}</span>
       </a>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default SliderCard
+export default SliderCard;
